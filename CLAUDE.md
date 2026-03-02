@@ -6,7 +6,7 @@ This is the **reqit-pg** npm package — PostgreSQL integration for the Reqit pr
 
 ## Project Family
 
-Reqit is organized as 5 sibling projects:
+Reqit is organized as 4 sibling projects:
 
 | Project | What | Visibility |
 |---------|------|-----------|
@@ -14,9 +14,8 @@ Reqit is organized as 5 sibling projects:
 | **reqit-sdk** | Phase 1 — `reqit` npm package: parser, AST, resolver, auditor, exporters | Open source |
 | **reqit-pg** (this repo) | Phase 2 — `reqit-pg` npm package: PostgreSQL schema, materialization, rollover | Open source |
 | **reqit-catalog** | Phase 3 — Self-hosted web app: Express 5, Pug, HTMX, Bootstrap 5, PostgreSQL | Open source |
-| **reqit-cloud** | Phase 4 — SaaS hosted instance: multi-tenancy, billing, onboarding | Private |
 
-**Dependency chain:** reqit-sdk → reqit-pg → reqit-catalog → reqit-cloud
+**Dependency chain:** reqit-sdk → reqit-pg → reqit-catalog
 
 All design documents live in `../reqit-specs/design/`. Read `../reqit-specs/design/strategy.md` for the master plan.
 
