@@ -50,6 +50,13 @@ These design documents define what this package implements:
 - **FERPA boundary:** Reqit never stores student data.
 - **No HTTP/REST.** API layer is reqit-catalog's responsibility.
 
+## Coding Standards
+
+See `../reqit-specs/CLAUDE.md` for project-wide coding standards. Key points for this package:
+- Use `courseKey()` from reqit-sdk for all course key construction — never inline the pattern
+- Precise test assertions with exact expected counts
+- Exhaustiveness guards where applicable
+
 ## What NOT to Do
 
 - Do not store student data
